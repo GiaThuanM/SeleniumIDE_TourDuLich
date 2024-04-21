@@ -16,6 +16,7 @@ namespace SeleniumIDE
             string filePath = @"C:\Users\Admin\Desktop\HK2-N3\Software Quality Assurance\LT\testscript.xlsx";
             using (var package = new ExcelPackage(new FileInfo(filePath)))
             {
+                ExcelPackage.LicenseContext = LicenseContext.Commercial;
                 ExcelWorksheet worksheet = package.Workbook.Worksheets[worksheetName];
                 int startRow = worksheet.Dimension.Start.Row + 1;//Bỏ dòng đầu tiêu đề
                 int endRow = worksheet.Dimension.End.Row;
@@ -28,7 +29,7 @@ namespace SeleniumIDE
 
                         testCases.Add(new object[] { email, password });
                     }
-                    else if(worksheetName.Equals("Đặt tour"))
+                    else if (worksheetName.Equals("Đặt tour"))
                     {
                         string soNguoiLon = worksheet.Cells[row, 1].Text;
                         string soTreEm = worksheet.Cells[row, 2].Text;
@@ -36,19 +37,20 @@ namespace SeleniumIDE
 
                         testCases.Add(new object[] { soNguoiLon, soTreEm, phuongThucThanhToan });
                     }
-                    else if(worksheetName.Equals("SQL Injection"))
+                    else if (worksheetName.Equals("SQL Injection"))
                     {
                         string hoTen = worksheet.Cells[row, 1].Text;
                         string matKhauXacNhan = worksheet.Cells[row, 2].Text;
 
                         testCases.Add(new object[] { hoTen, matKhauXacNhan });
                     }
-                    else if(worksheetName.Equals("URL Manipulation"))
+                    else if (worksheetName.Equals("URL Manipulation"))
                     {
                         string url = worksheet.Cells[row, 1].Text;
 
                         testCases.Add(new object[] { url });
-                    }else if(worksheetName.Equals("Thêm sản phẩm tour"))
+                    }
+                    else if (worksheetName.Equals("Thêm sản phẩm tour"))
                     {
                         string idSPTour = worksheet.Cells[row, 1].Text;
                         string tenSPTour = worksheet.Cells[row, 2].Text;
@@ -90,14 +92,14 @@ namespace SeleniumIDE
                 {
                     column = 2;
                 }
-                else if(worksheetName.Equals("Thêm sản phẩm tour"))
+                else if (worksheetName.Equals("Thêm sản phẩm tour"))
                 {
                     column = 14;
                 }
                 worksheet.Cells[currentRow, column + 1].Value = actualResult;
                 string actualResultExcel = worksheet.Cells[currentRow, column + 1].Text.ToLower();
                 string expectedResultExcel = worksheet.Cells[currentRow, column].Text.ToLower();
-                string status = (expectedResultExcel.Equals(actualResultExcel)) ? "Passed" : "Failed";
+                string status = expectedResultExcel.Equals(actualResultExcel) ? "Passed" : "Failed";
                 worksheet.Cells[currentRow, column + 2].Value = status;
                 package.Save();
             }

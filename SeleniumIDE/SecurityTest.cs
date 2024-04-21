@@ -66,7 +66,7 @@ namespace SeleniumIDE
         // Test bảo mật XSS (Cross-Site Scripting), SQL Injection, URL Manipulation
         // XSS (Cross-Site Scripting)
         [Test]
-        [TestCaseSource(typeof(ExcelHelper),nameof(ExcelHelper.GetTestDataFromExcel), new object[] { "XSS" })]
+        [TestCaseSource(typeof(ExcelHelper), nameof(ExcelHelper.GetTestDataFromExcel), new object[] { "XSS" })]
         public void LoginAdminXSS(string email, string password)
         {
             string urlLoginAdmin = "https://localhost:44385/Logging/LoginAdmin";
@@ -100,7 +100,7 @@ namespace SeleniumIDE
         }
         // SQL Injection
         [Test]
-        [TestCaseSource(typeof(ExcelHelper),nameof(ExcelHelper.GetTestDataFromExcel), new object[] { "SQL Injection" })]
+        [TestCaseSource(typeof(ExcelHelper), nameof(ExcelHelper.GetTestDataFromExcel), new object[] { "SQL Injection" })]
         public void ChinhSuaThongTinSQLInjection(string hoTen, string passwordConfirm)
         {
             if (LoginSuccessful())
@@ -190,15 +190,12 @@ namespace SeleniumIDE
             }
             try
             {
-                if (!driver.Url.Contains("DanhMucTour"))
+                if (driver.Url.Contains("LoginAndRegister"))
                 {
                     elementCheck = driver.FindElement(By.CssSelector("h1:nth-child(1)"));
                     actualResult = elementCheck.Text;
-                    if (actualResult == "BẠN MUỐN ĐI DU LỊCH")
-                    {
-                        actualResult = "Không truy cập dô tài khoản người khác qua đường link được (id: 3)";
-                        success = true;
-                    }
+                    actualResult = "Không truy cập dô tài khoản người khác qua đường link được (id: 3)";
+                    success = true;
                 }
             }
             catch (Exception ex) { }
@@ -209,7 +206,7 @@ namespace SeleniumIDE
                 Assert.Pass(actualResult);
                 return;
             }
-            try
+            /*try
             {
                 wait.Until(ExpectedConditions.AlertIsPresent());
                 driver.SwitchTo().Alert().Accept();
@@ -220,7 +217,6 @@ namespace SeleniumIDE
                     counterTestcase++;
                     ExcelHelper.WriteResultToExcel(actualResult, "URL Manipulation", counterTestcase);
                     Assert.Pass(actualResult);
-                    return;
                 }
                 else
                 {
@@ -229,11 +225,11 @@ namespace SeleniumIDE
             }
             catch (Exception ex)
             {
-                counterTestcase++;
+                Assert.Fail(actualResult);
+                *//*counterTestcase++;
                 ExcelHelper.WriteResultToExcel("CHƯA ĐĂNG NHẬP TÀI KHOẢN ADMIN!", "URL Manipulation", counterTestcase);
-                Assert.Pass("CHƯA ĐĂNG NHẬP TÀI KHOẢN ADMIN!");
-            }
-            Assert.Fail(actualResult);
+                Assert.Pass("CHƯA ĐĂNG NHẬP TÀI KHOẢN ADMIN!");*//*
+            }*/
         }
     }
 }

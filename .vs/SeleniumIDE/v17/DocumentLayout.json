@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\SeleniumIDE\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|c:\\users\\admin\\source\\repos\\seleniumide\\seleniumide\\securitytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|solutionrelative:seleniumide\\securitytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|c:\\users\\admin\\source\\repos\\seleniumide\\seleniumide\\dattourtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|solutionrelative:seleniumide\\dattourtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|c:\\users\\admin\\source\\repos\\seleniumide\\seleniumide\\logintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|solutionrelative:seleniumide\\logintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|c:\\users\\admin\\source\\repos\\seleniumide\\seleniumide\\excelhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|solutionrelative:seleniumide\\excelhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|c:\\users\\admin\\source\\repos\\seleniumide\\seleniumide\\addtourproducttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|solutionrelative:seleniumide\\addtourproducttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,15 +38,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "LoginTest.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SeleniumIDE\\SeleniumIDE\\LoginTest.cs",
+              "RelativeDocumentMoniker": "SeleniumIDE\\LoginTest.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SeleniumIDE\\SeleniumIDE\\LoginTest.cs",
+              "RelativeToolTip": "SeleniumIDE\\LoginTest.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAIAwwGQAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T04:16:37.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExcelHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SeleniumIDE\\SeleniumIDE\\ExcelHelper.cs",
+              "RelativeDocumentMoniker": "SeleniumIDE\\ExcelHelper.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SeleniumIDE\\SeleniumIDE\\ExcelHelper.cs",
+              "RelativeToolTip": "SeleniumIDE\\ExcelHelper.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAIAwwGkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T05:17:24.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AddTourProductTest.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SeleniumIDE\\SeleniumIDE\\AddTourProductTest.cs",
               "RelativeDocumentMoniker": "SeleniumIDE\\AddTourProductTest.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\SeleniumIDE\\SeleniumIDE\\AddTourProductTest.cs",
               "RelativeToolTip": "SeleniumIDE\\AddTourProductTest.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAuwEsAAABjAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T14:12:01.474Z",
+              "WhenOpened": "2024-03-30T05:17:23.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DatTourTest.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SeleniumIDE\\SeleniumIDE\\DatTourTest.cs",
+              "RelativeDocumentMoniker": "SeleniumIDE\\DatTourTest.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SeleniumIDE\\SeleniumIDE\\DatTourTest.cs",
+              "RelativeToolTip": "SeleniumIDE\\DatTourTest.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAtwE4AAACbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T04:31:59.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SecurityTest.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SeleniumIDE\\SeleniumIDE\\SecurityTest.cs",
+              "RelativeDocumentMoniker": "SeleniumIDE\\SecurityTest.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SeleniumIDE\\SeleniumIDE\\SecurityTest.cs",
+              "RelativeToolTip": "SeleniumIDE\\SecurityTest.cs",
+              "ViewState": "AQIAALcAAAAAAAAAAAAYwMQAAABoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T04:03:27.276Z",
               "EditorCaption": ""
             }
           ]

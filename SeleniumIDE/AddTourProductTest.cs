@@ -53,14 +53,14 @@ namespace SeleniumIDE
         }
         [Test]
         [TestCaseSource(typeof(ExcelHelper), nameof(ExcelHelper.GetTestDataFromExcel), new object[] { "Thêm sản phẩm tour" })]
-        public void AddTourProduct(string idSPTour,string tenSPTour, string giaNguoiLon, string ngayKhoiHanh, string ngayKetThuc, string moTa, string diemTapTrung,string diemDen,string soNguoi,string hinhAnh,string giaTreEm,string tenNV,string tenTour)
+        public void AddTourProduct(string idSPTour, string tenSPTour, string giaNguoiLon, string ngayKhoiHanh, string ngayKetThuc, string moTa, string diemTapTrung, string diemDen, string soNguoi, string hinhAnh, string giaTreEm, string tenNV, string tenTour)
         {
             if (LoginAdminSuccess())
             {
                 Actions action = new Actions(driver);
                 IWebElement navbar = driver.FindElement(By.XPath("/html/body/div[1]/div[2]/ul/li[4]/a/span"));
                 action.MoveToElement(navbar).MoveToElement(driver.FindElement(By.CssSelector("li:nth-child(4) span"))).Click().Build().Perform();
-                
+
                 wait.Until(ExpectedConditions.ElementExists(By.LinkText("Thêm mới sản phẩm tour"))).Click();
 
                 wait.Until(ExpectedConditions.ElementExists(By.Id("ID_SPTour"))).SendKeys(idSPTour);

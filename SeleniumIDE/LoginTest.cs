@@ -31,7 +31,7 @@ namespace SeleniumIDE
             driver.Dispose();
         }
         [Test]
-        [TestCaseSource(typeof(ExcelHelper),nameof(ExcelHelper.GetTestDataFromExcel), new object[] { "Login" })]
+        [TestCaseSource(typeof(ExcelHelper), nameof(ExcelHelper.GetTestDataFromExcel), new object[] { "Login" })]
         public void LoginTestMain(string email, string password)
         {
             Login(email, password);
@@ -53,7 +53,8 @@ namespace SeleniumIDE
                     validationMessagePassword = driver.FindElement(By.Name("MatKhau")).GetAttribute("validationMessage");
                 }
 
-            } else if (driver.Url.Contains("Login"))
+            }
+            else if (driver.Url.Contains("Login"))
             {
                 loginMessage = driver.FindElement(By.CssSelector(".field-validation-error"));
             }
@@ -66,7 +67,7 @@ namespace SeleniumIDE
             {
                 actualResult = logged.Text;
             }
-            else if(loginMessage != null)
+            else if (loginMessage != null)
             {
                 actualResult = loginMessage.Text;
             }
@@ -74,7 +75,7 @@ namespace SeleniumIDE
             {
                 actualResult = validationMessageEmail;
             }
-            else if(validationMessagePassword != null)
+            else if (validationMessagePassword != null)
             {
                 actualResult = validationMessagePassword;
             }
@@ -83,10 +84,10 @@ namespace SeleniumIDE
                 actualResult = "Xảy ra kết quả ngoài ý muốn";
             }
             counterTestcase++;
-            ExcelHelper.WriteResultToExcel(actualResult, "Login" , counterTestcase);
+            ExcelHelper.WriteResultToExcel(actualResult, "Login", counterTestcase);
             Assert.Pass(actualResult);
         }
-        private void Login(string email,string password)
+        private void Login(string email, string password)
         {
             driver.Navigate().GoToUrl("https://localhost:44385/");
 

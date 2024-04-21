@@ -70,17 +70,13 @@ namespace SeleniumIDE
             wait.Until(ExpectedConditions.ElementToBeClickable(By.CssSelector(".me-auto > .nav-item:nth-child(2) > .nav-link"))).Click();
 
             Random random = new Random();
-            int randomOneToTwentyThree = 0;
-            do
-            {
-                randomOneToTwentyThree = random.Next(1, 24);
-            } while (randomOneToTwentyThree == 14);
             int randomOneToNine = random.Next(1, 10);
+            int randomOneToTwentyThree = random.Next(1, 24);
             string randomString = randomOneToTwentyThree.ToString("00000");
-
+            Thread.Sleep(500);
             try
             {
-                IWebElement detailTourBtn = wait.Until(ExpectedConditions.ElementToBeClickable(By.CssSelector($".col:nth-child({randomOneToNine}) .btn-more")));
+                IWebElement detailTourBtn = wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath($"/html/body/div[2]/div[3]/div/div[{randomOneToNine}]/div/div/a")));
                 ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", detailTourBtn);
                 Thread.Sleep(500);
                 detailTourBtn.Click();
@@ -88,10 +84,11 @@ namespace SeleniumIDE
             catch (ElementClickInterceptedException ex)
             {
                 driver.Navigate().GoToUrl($"https://localhost:44385/Home/ChiTietTour/{randomString}");
+                //throw new ElementClickInterceptedException("Error click card view item tour: ", ex);
             }
             try
             {
-                IWebElement moveToDatTour = wait.Until(ExpectedConditions.ElementToBeClickable(By.LinkText("Đặt tour")));
+                IWebElement moveToDatTour = wait.Until(ExpectedConditions.ElementToBeClickable(By.CssSelector(".btn")));
                 ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", moveToDatTour);
                 Thread.Sleep(500);
                 moveToDatTour.Click();
@@ -99,10 +96,11 @@ namespace SeleniumIDE
             catch (ElementClickInterceptedException ex)
             {
                 driver.Navigate().GoToUrl($"https://localhost:44385/Home/DatTour/{randomString}");
+                //throw new ElementClickInterceptedException("Error click button book tour: ", ex);
             }
         }
         [Test]
-        [TestCaseSource(typeof(ExcelHelper),nameof(ExcelHelper.GetTestDataFromExcel), new object[] { "Đặt tour" })]
+        [TestCaseSource(typeof(ExcelHelper), nameof(ExcelHelper.GetTestDataFromExcel), new object[] { "Đặt tour" })]
         public void DatTour(string soLuongNguoiLon, string soLuongTreEm, string methodPayment)
         {
             if (LoginSuccessful())
@@ -162,8 +160,6 @@ namespace SeleniumIDE
                 {
                     Assert.Fail("Phương thức thanh toán không hợp lệ");
                 }
-                // Done
-                // Còn VNPAY
             }
             else
             {
