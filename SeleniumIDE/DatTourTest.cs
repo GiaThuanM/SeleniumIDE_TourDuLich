@@ -17,7 +17,7 @@ namespace SeleniumIDE
         private IWebDriver driver;
         private WebDriverWait wait;
         private int counterTestcase = 0;
-        private string connectString = "data source=TUANANH\\SQLEXPRESS;initial catalog=QLTOUR;integrated security=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework";
+        private string connectString = "data source=.;initial catalog=QLTOUR;integrated security=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework";
         [SetUp]
         public void Setup()
         {
@@ -27,7 +27,7 @@ namespace SeleniumIDE
         [TearDown]
         public void TearDown()
         {
-            // Clean up WebDriver (called once after all tests are executed)
+           
             driver.Quit();
             driver.Dispose();
         }
@@ -48,8 +48,8 @@ namespace SeleniumIDE
         }
         private bool LoginSuccessful()
         {
-            string email = "tuan@gmail.com";
-            string password = "Tuan@321";
+            string email = "thuanle394@gmail.com";
+            string password = "112233@Th";
             Login(email, password);
             if (driver.Url.Contains("LoginAndRegister") || driver.Url.Contains("Login"))
             {
@@ -58,7 +58,7 @@ namespace SeleniumIDE
             else
             {
                 string logged = driver.FindElement(By.XPath("//*[@id=\"myNavbar\"]/ul[2]/li[1]/a")).Text;
-                if (logged.ToLower() == "XIN CHÀO, TRẦN TUẤN ANH".ToLower())
+                if (logged.ToLower() == "XIN CHÀO, LEE THUAN".ToLower())
                 {
                     return true;
                 }
@@ -70,8 +70,8 @@ namespace SeleniumIDE
             wait.Until(ExpectedConditions.ElementToBeClickable(By.CssSelector(".me-auto > .nav-item:nth-child(2) > .nav-link"))).Click();
 
             Random random = new Random();
-            int randomOneToNine = random.Next(1, 10);
-            int randomOneToTwentyThree = random.Next(1, 24);
+            int randomOneToNine = random.Next(1, 6);
+            int randomOneToTwentyThree = random.Next(26, 30);
             string randomString = randomOneToTwentyThree.ToString("00000");
             Thread.Sleep(500);
             try
@@ -93,7 +93,7 @@ namespace SeleniumIDE
                 Thread.Sleep(500);
                 moveToDatTour.Click();
             }
-            catch (ElementClickInterceptedException ex)
+            catch (ElementClickInterceptedException )
             {
                 driver.Navigate().GoToUrl($"https://localhost:44385/Home/DatTour/{randomString}");
                 //throw new ElementClickInterceptedException("Error click button book tour: ", ex);
@@ -175,12 +175,12 @@ namespace SeleniumIDE
             {
                 messageValidationNguoiLon = wait.Until(ExpectedConditions.ElementToBeClickable(By.Id("nguoilondat"))).GetAttribute("validationMessage");
             }
-            catch (NoSuchElementException ex) { }
+            catch (NoSuchElementException ) { }
             try
             {
                 messageValidationTreEm = wait.Until(ExpectedConditions.ElementToBeClickable(By.Id("treemdat"))).GetAttribute("validationMessage");
             }
-            catch (NoSuchElementException ex) { }
+            catch (NoSuchElementException) { }
             try
             {
                 IWebElement alertWarning = driver.FindElement(By.CssSelector(".alert"));
@@ -189,7 +189,7 @@ namespace SeleniumIDE
                     messageValidationSoLuong = alertWarning.Text;
                 }
             }
-            catch (NoSuchElementException ex) { }
+            catch (NoSuchElementException ) { }
 
             string actualResult;
             if (!string.IsNullOrEmpty(messageValidationNguoiLon))

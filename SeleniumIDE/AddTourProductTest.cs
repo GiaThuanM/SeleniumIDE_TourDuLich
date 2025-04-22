@@ -1,15 +1,15 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Interactions;
-using OpenQA.Selenium.Support.UI;
+﻿using OpenQA.Selenium.Support.UI;
+using OpenQA.Selenium;
 using SeleniumExtras.WaitHelpers;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
+using OpenQA.Selenium.Chrome;
+using OfficeOpenXml;
+using OpenQA.Selenium.Interactions;
 
 namespace SeleniumIDE
 {
@@ -18,7 +18,7 @@ namespace SeleniumIDE
         private IWebDriver driver;
         private WebDriverWait wait;
         private int counterTestcase = 0;
-        private string connectString = "data source=TUANANH\\SQLEXPRESS;initial catalog=QLTOUR;integrated security=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework";
+        private string connectString = "data source=.;initial catalog=QLTOUR;integrated security=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework";
         [SetUp]
         public void Setup()
         {
@@ -36,7 +36,7 @@ namespace SeleniumIDE
             driver.Navigate().GoToUrl("https://localhost:44385/Logging/LoginAdmin");
             wait.Until(ExpectedConditions.ElementToBeClickable(By.Id("Mail_NV"))).SendKeys("admin");
             IWebElement password = driver.FindElement(By.Id("MatKhau"));
-            password.SendKeys("123123");
+            password.SendKeys("admin");
             password.SendKeys(Keys.Enter);
             if (driver.Url.Contains("/NHANVIENs/GetData"))
             {
@@ -81,8 +81,7 @@ namespace SeleniumIDE
                 SelectElement selectedIdTour = new SelectElement(driver.FindElement(By.Id("ID_TOUR")));
                 selectedIdTour.SelectByText(tenTour);
                 wait.Until(ExpectedConditions.ElementExists(By.CssSelector(".btn"))).SendKeys(Keys.Enter);
-                int idSanPhamTour = int.Parse(idSPTour);
-                if (QueryDatabaseCompareAddProductTour(idSanPhamTour))
+                if (QueryDatabaseCompareAddProductTour(idSPTour))
                 {
                     counterTestcase++;
                     string actualResult = "Thêm sản phẩm tour thành công";
@@ -99,7 +98,7 @@ namespace SeleniumIDE
                 Assert.Fail("Đăng nhập admin thất bại");
             }
         }
-        private bool QueryDatabaseCompareAddProductTour(int idSPTour)
+        private bool QueryDatabaseCompareAddProductTour(string idSPTour)
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectString))
             {

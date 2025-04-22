@@ -46,8 +46,8 @@ namespace SeleniumIDE
         }
         private bool LoginSuccessful()
         {
-            string email = "tuan@gmail.com";
-            string password = "Tuan@321";
+            string email = "thuanle394@gmail.com";
+            string password = "332211@Th";
             Login(email, password);
             if (driver.Url.Contains("LoginAndRegister") || driver.Url.Contains("Login"))
             {
@@ -56,7 +56,7 @@ namespace SeleniumIDE
             else
             {
                 string logged = driver.FindElement(By.XPath("//*[@id=\"myNavbar\"]/ul[2]/li[1]/a")).Text;
-                if (logged.ToLower() == "XIN CHÀO, TRẦN TUẤN ANH".ToLower())
+                if (logged.ToLower() == "XIN CHÀO, LEE THUAN".ToLower())
                 {
                     return true;
                 }

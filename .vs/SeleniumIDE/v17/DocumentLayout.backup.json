@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Phuoc\\OneDrive\\Desktop\\SeleniumIDE\\SeleniumIDE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|c:\\users\\phuoc\\onedrive\\desktop\\seleniumide\\seleniumide\\seleniumide\\dattourtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|solutionrelative:seleniumide\\dattourtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|c:\\users\\phuoc\\onedrive\\desktop\\seleniumide\\seleniumide\\seleniumide\\excelhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|solutionrelative:seleniumide\\excelhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|c:\\users\\phuoc\\onedrive\\desktop\\seleniumide\\seleniumide\\seleniumide\\logintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|solutionrelative:seleniumide\\logintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|c:\\users\\phuoc\\onedrive\\desktop\\seleniumide\\seleniumide\\seleniumide\\securitytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|solutionrelative:seleniumide\\securitytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|c:\\users\\phuoc\\onedrive\\desktop\\seleniumide\\seleniumide\\seleniumide\\addtourproducttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|solutionrelative:seleniumide\\addtourproducttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|c:\\users\\phuoc\\onedrive\\desktop\\seleniumide\\seleniumide\\seleniumide\\seleniumide.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F067942B-3FEB-4660-9F23-FF10839B9592}|SeleniumIDE\\SeleniumIDE.csproj|solutionrelative:seleniumide\\seleniumide.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExcelHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Phuoc\\OneDrive\\Desktop\\SeleniumIDE\\SeleniumIDE\\SeleniumIDE\\ExcelHelper.cs",
+              "RelativeDocumentMoniker": "SeleniumIDE\\ExcelHelper.cs",
+              "ToolTip": "C:\\Users\\Phuoc\\OneDrive\\Desktop\\SeleniumIDE\\SeleniumIDE\\SeleniumIDE\\ExcelHelper.cs",
+              "RelativeToolTip": "SeleniumIDE\\ExcelHelper.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAUwGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T07:03:54.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SeleniumIDE.csproj",
+              "DocumentMoniker": "C:\\Users\\Phuoc\\OneDrive\\Desktop\\SeleniumIDE\\SeleniumIDE\\SeleniumIDE\\SeleniumIDE.csproj",
+              "RelativeDocumentMoniker": "SeleniumIDE\\SeleniumIDE.csproj",
+              "ToolTip": "C:\\Users\\Phuoc\\OneDrive\\Desktop\\SeleniumIDE\\SeleniumIDE\\SeleniumIDE\\SeleniumIDE.csproj",
+              "RelativeToolTip": "SeleniumIDE\\SeleniumIDE.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-09T06:47:47.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginTest.cs",
+              "DocumentMoniker": "C:\\Users\\Phuoc\\OneDrive\\Desktop\\SeleniumIDE\\SeleniumIDE\\SeleniumIDE\\LoginTest.cs",
+              "RelativeDocumentMoniker": "SeleniumIDE\\LoginTest.cs",
+              "ToolTip": "C:\\Users\\Phuoc\\OneDrive\\Desktop\\SeleniumIDE\\SeleniumIDE\\SeleniumIDE\\LoginTest.cs",
+              "RelativeToolTip": "SeleniumIDE\\LoginTest.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAwC4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T04:16:37.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddTourProductTest.cs",
+              "DocumentMoniker": "C:\\Users\\Phuoc\\OneDrive\\Desktop\\SeleniumIDE\\SeleniumIDE\\SeleniumIDE\\AddTourProductTest.cs",
+              "RelativeDocumentMoniker": "SeleniumIDE\\AddTourProductTest.cs",
+              "ToolTip": "C:\\Users\\Phuoc\\OneDrive\\Desktop\\SeleniumIDE\\SeleniumIDE\\SeleniumIDE\\AddTourProductTest.cs",
+              "RelativeToolTip": "SeleniumIDE\\AddTourProductTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T05:17:23.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DatTourTest.cs",
+              "DocumentMoniker": "C:\\Users\\Phuoc\\OneDrive\\Desktop\\SeleniumIDE\\SeleniumIDE\\SeleniumIDE\\DatTourTest.cs",
+              "RelativeDocumentMoniker": "SeleniumIDE\\DatTourTest.cs",
+              "ToolTip": "C:\\Users\\Phuoc\\OneDrive\\Desktop\\SeleniumIDE\\SeleniumIDE\\SeleniumIDE\\DatTourTest.cs",
+              "RelativeToolTip": "SeleniumIDE\\DatTourTest.cs",
+              "ViewState": "AgIAAOgAAAAAAAAAAAAYwEMBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T04:31:59.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SecurityTest.cs",
+              "DocumentMoniker": "C:\\Users\\Phuoc\\OneDrive\\Desktop\\SeleniumIDE\\SeleniumIDE\\SeleniumIDE\\SecurityTest.cs",
+              "RelativeDocumentMoniker": "SeleniumIDE\\SecurityTest.cs",
+              "ToolTip": "C:\\Users\\Phuoc\\OneDrive\\Desktop\\SeleniumIDE\\SeleniumIDE\\SeleniumIDE\\SecurityTest.cs",
+              "RelativeToolTip": "SeleniumIDE\\SecurityTest.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T04:03:27.276Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

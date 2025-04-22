@@ -13,7 +13,7 @@ namespace SeleniumIDE
         public static IEnumerable<object[]> GetTestDataFromExcel(string worksheetName)
         {
             List<object[]> testCases = new List<object[]>();
-            string filePath = @"C:\Users\Admin\Desktop\HK2-N3\Software Quality Assurance\LT\testscript.xlsx";
+            string filePath = @"C:\Users\Phuoc\OneDrive\Desktop\SQA_TourDL-main\testscript.xlsx";
             using (var package = new ExcelPackage(new FileInfo(filePath)))
             {
                 ExcelPackage.LicenseContext = LicenseContext.Commercial;
@@ -74,7 +74,7 @@ namespace SeleniumIDE
         }
         public static void WriteResultToExcel(string actualResult, string worksheetName, int rowIndex)
         {
-            string filePath = @"C:\Users\Admin\Desktop\HK2-N3\Software Quality Assurance\LT\testscript.xlsx";
+            string filePath = @"C:\Users\Phuoc\OneDrive\Desktop\SQA_TourDL-main\testscript.xlsx";
             using (var package = new ExcelPackage(new FileInfo(filePath)))
             {
                 ExcelWorksheet worksheet = package.Workbook.Worksheets[worksheetName];

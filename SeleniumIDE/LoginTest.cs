@@ -9,6 +9,8 @@ using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System.Data.SqlClient;
 using System.IO;
+using WebDriverManager;
+using WebDriverManager.DriverConfigs.Impl;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace SeleniumIDE
 {
@@ -21,9 +23,11 @@ namespace SeleniumIDE
         [SetUp]
         public void Setup()
         {
+            new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig()); // Tự động tải phiên bản đúng
             driver = new ChromeDriver();
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
+
         [TearDown]
         public void TearDown()
         {
